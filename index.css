@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choroplethMap {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding-top: 10px;
+}
+#tooltip {
+  position: absolute;
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 20px;
+  font-size: 12px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: black;
+  font-family: Arial;
+  font-weight: bold;
+  pointer-events: none;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  opacity: 0.85;
+}
+.county {
+  stroke: black;
+  stroke-width: 0.1;
+}
+.county:hover {
+  cursor: pointer;
+  stroke-width: 1;
+}
+
+.cell > .swatch:hover {
+  text-decoration: none;
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 2px;
+}
+#legend .swatch {
+  stroke: black;
+}
+#legend .label {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.legendTitle {
+  font-size: 16px;
+  position: relative;
+  text-anchor: middle;
+  transform: translate(60px, 5px);
+}
+
+.states {
+  stroke: black;
+  stroke-width: 0.4;
+}
+#title {
+  font-size: 4em;
+  text-anchor: middle;
+  fill: black;
+}
+#description {
+  font-size: 1em;
+  text-anchor: middle;
+  fill: black;
+}
+.textSource {
+  font-style: italic;
+  font-size: 12px;
+  text-anchor: end;
+  fill: #464442;
+}
+.linkSource {
+  fill: #464442;
+  text-decoration: none;
+}
+
+.nameAuthor {
+  font-size: 12px;
+  padding-bottom: 30px;
+  text-anchor: middle;
+}
+a {
+  text-decoration: underline;
+  font-weight: bold;
+}
